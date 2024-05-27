@@ -18,6 +18,10 @@ app.use('/api',BookedData);
 app.use('/api',Customer);
 app.use('/api',CustomerBooked);
 
+app.get("/",(req,res)=>{
+    res.status(200).send("Api is Running ");
+});
+
 app.listen(PORT,()=>{
     console.log(`App is running on port  ${4000}`);
 });
